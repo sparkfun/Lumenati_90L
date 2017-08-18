@@ -28,37 +28,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:APA102
-LIBS:SparkFun-Aesthetics
-LIBS:SparkFun-Batteries
-LIBS:SparkFun-Boards
-LIBS:SparkFun-Capacitors
-LIBS:SparkFun-Clocks
-LIBS:SparkFun-Coils
-LIBS:SparkFun-Connectors
-LIBS:SparkFun-DiscreteSemi
-LIBS:SparkFun-Displays
-LIBS:SparkFun-Electromechanical
-LIBS:SparkFun-Fuses
-LIBS:SparkFun-GPS
-LIBS:SparkFun-Hardware
-LIBS:SparkFun-IC-Amplifiers
-LIBS:SparkFun-IC-Comms
-LIBS:SparkFun-IC-Conversion
-LIBS:SparkFun-IC-Logic
-LIBS:SparkFun-IC-Memory
-LIBS:SparkFun-IC-Microcontroller
-LIBS:SparkFun-IC-Power
-LIBS:SparkFun-IC-Special-Function
-LIBS:SparkFun-Jumpers
-LIBS:SparkFun-LED
-LIBS:SparkFun-PowerSymbols
-LIBS:SparkFun-Resistors
-LIBS:SparkFun-RF
-LIBS:SparkFun-Sensors
-LIBS:SparkFun-Switches
-LIBS:HiBeams_90L-cache
-EELAYER 26 0
+LIBS:Lumenati_90L-cache
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -496,4 +467,6 @@ Wire Wire Line
 	8150 3250 8450 3250
 Wire Wire Line
 	8150 3350 8450 3350
+Text Notes 6300 1400 0    79   ~ 0
+Note: JP1 and JP2 are present so the user can disconnect clock and data\nsignals from subsequent boards, allowing you to make a closed loop design\nwithout having the logic from the last board interfere with the logic of the\nfirst. They are normally closed, so open them if you're making a closed\nloop design.
 $EndSCHEMATC
